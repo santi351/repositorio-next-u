@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="author" content="matias castillo">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <svg height="100" width="550">
+          <defs>
+            <g id="cvlogo">
+              <rect width="95" height="95" stroke="black" stroke-width="4" filter="#logo" />
+            </g>
+          </defs>
+          <use xlink:href="#cvlogo"/>
+          <rect width="550" height="95" stroke="black" stroke-width="4" fill="cyan"/>
+          <text x="150" y="60" fill="red" font-size="40">Matías Castillo</text>
+          Tu Navegadro no soporta graficos vectoriales.
+      </svg>
+    </header>
+    <h1>Curriculum Vitae</h1>
+      <h2>Datos Personales</h2>
+        <h3>Nombre y apellido: </h3>
+          <p>Matías Castillo</p>
+        <h3>Fecha y lugar de nacimiento: </h3>
+          <p>07/07/2018 a las 12:35 a.m.</p>
+        <h3>Documento de Identidad:</h3>
+          <p>123.456.789</p>
+    <h2>Enlaces de interes</h2>
+    <ul>
+      <li><a href="../Experiencia/Experiencia.html">Experiencia</a></li>
+      <li><a href="../index.html">Volver</a></li>
+    </ul>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Anio</th>
+        <th>Institución</th>
+        <th>Lugar</th>
+        <th>Culmino?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2011</td>
+        <td>Guardería canina</td>
+        <td>Córdoba</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2012</td>
+        <td>Secundario canino</td>
+        <td>Córdoba</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2014</td>
+        <td>Facultad: <strong><em>Lic. en Perrito Mercantil </strong></em></td>
+        <td>Córdoba</td>
+        <td>Si</td>
+      </tr>
+      <td>2010</td>
+      <td>Ensenianzas de la vida misma</td>
+      <td>El mundo</td>
+      <td><em>Pending...</em></td>
+    </tbody>
+    </table>
+      <form autocomplete="on" name="formulario1">
+          <legend><h2>Agregar Estudios</h2></legend><br>Anio:
+          <select name="elecciondeanio" required >
+            <option value="None">Elegir Anio</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+          </select><br>Institución:
+          <input type="text" name="institucion" placeholder="Ej: Escuela canina" required><br>Lugar:
+          <input type="text" name="lugar" placeholder="Ej: Colombia" required><br>Culminó?:<br>
+          <input type="radio" name="culmino" value="Si" id="radio">Si<br>
+          <input type="radio" name="culmino" value="No" id="radio">No<br>
+          <br><input type="submit" name="estudios" value="Enviar" onclick="funcion()">
+        </p>
+      </form>
+      <footer>
+        <p>Teléfono: <a href="tel:5493515153481">+54 9 351 5153481</a></p>
+        <p>Email Personal: <a href="mailto:matias@gmail.com">matias@gmail.com</a>.</p>
+        <p><a href="https://www.facebook.com/NextUOficial/" target="_blank">Facebook</a></p>
+        <p>Dirección:</p>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.853899613151!2d-64.20405728485255!3d-31.390591781412734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298f3ede3e993%3A0x41093c57e3533c51!2zTWFydMOtbiBHYXJjw61hIDE1NzIsIFg1MDA4SE9MIEPDs3Jkb2Jh!5e0!3m2!1ses-419!2sar!4v1530509151075" width="1050" height="110" frameborder="0" style="border:0" allowfullscreen>No se puede visualizar el Mapa en este navegador.</iframe></p>
+      </footer>
+  </body>
+  <script>
+function funcion() {
+    document.getElementById("radio").required = true;
+  }
+  </script>
+</html>
