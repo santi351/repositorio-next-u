@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <meta name="author" content="matias castillo">
-    <title></title>
+    <title>Educacion</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
   </head>
   <body>
     <header>
@@ -70,8 +71,8 @@
     </table>
       <form autocomplete="on" name="formulario1">
           <legend><h2>Agregar Estudios</h2></legend><br>Anio:
-          <select name="elecciondeanio" required >
-            <option value="None">Elegir Anio</option>
+          <select id="opciones" name="elecciondeanio" required>
+            <option value="None" selected disabled>Elegir Anio</option>
             <option value="2018">2018</option>
             <option value="2017">2017</option>
             <option value="2016">2016</option>
@@ -101,5 +102,8 @@
 function funcion() {
     document.getElementById("radio").required = true;
   }
+  function funcion1() {
+      document.getElementById("opciones").required = true;
+    }
   </script>
 </html>

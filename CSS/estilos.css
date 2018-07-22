@@ -1,0 +1,20 @@
+body{
+  background-color: grey;
+  font-family: sans-serif;
+}
+footer{
+  margin-top: 200px;
+}
+img{
+  border-radius: 10px;
+}
+a{
+  color: yellow;
+  hover: cyan;
+}
+a:hover{
+  color: cyan;
+}
+#art1>ul>li:first-child::after{
+  content: 'hola'
+}
